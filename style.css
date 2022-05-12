@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+@font-face {
+    font-family: 'justicia';
+    src: url(/src/justicia/Justicia.ttf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #05224f;
+    margin: 0;
+}
+
+
+
+
+.neon  {
+    font-family: 'justicia';
+    color: #fff;
+    text-shadow: 0 0 7px rgb(150, 148, 148),
+        0 0 10px #fff,
+        0 0 42px rgb(4, 83, 219),
+        0 0 77px rgb(13, 22, 91),
+        0 0 100px rgb(7, 110, 165)
+}
+
+.footer  {
+    font-family: 'justicia';
+    color: #fff;
+}
+
+.neon-button{
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    text-shadow: 0 0 7px rgb(150, 148, 148),
+        0 0 10px #fff,
+        0 0 42px rgb(4, 83, 219),
+        0 0 77px rgb(13, 22, 91),
+        0 0 100px rgb(7, 110, 165)
+}
+
+.tab {
+    overflow: hidden;
+    }
+    .tab-content {
+    max-height: 0;
+    transition: all 0.5s;
+    }
+    input:checked + .tab-label .test {
+        background-color: #000;
+    }
+    input:checked + .tab-label .test svg {
+        transform: rotate(180deg);
+        stroke: #fff;
+    }
+    input:checked + .tab-label::after {
+    transform: rotate(90deg);
+    }
+    input:checked ~ .tab-content {
+    max-height: 100vh;
+    }
